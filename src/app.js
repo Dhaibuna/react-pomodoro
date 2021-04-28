@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from "react-dom"
 import Header from "./components/header";
-import SetTimer from "./components/breakLength"
+import SetBreakLength from "./components/breakLength";
+import SetSessionLength from "./components/sessionLength";
 
 
 
@@ -9,7 +10,9 @@ import SetTimer from "./components/breakLength"
 ReactDOM.render(
     <div>
     <Header />
-    <SetTimer />
+    <SetBreakLength />
+    <SetSessionLength />
+
     </div>,
     document.querySelector('#title')
 )

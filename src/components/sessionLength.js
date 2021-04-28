@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-const SetBreakLength = () => {
+const SetSessionLength = () => {
     // start configuration Break Time Length configuration
     const [count, setCount] = useState(5);
 
@@ -15,7 +15,7 @@ const SetBreakLength = () => {
 
     return(
         <div class="timelength-container">
-            <h2> Break time length</h2>
+            <h2> Session time length</h2>
             <div>
                 <button onClick={decreaseCount} >-</button>
                 <span>{count}</span>
@@ -25,4 +25,4 @@ const SetBreakLength = () => {
     )
 }
 
-export default SetBreakLength
+export default SetSessionLength
