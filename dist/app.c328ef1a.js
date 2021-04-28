@@ -29708,7 +29708,9 @@ var _sessionLength = _interopRequireDefault(require("./components/sessionLength"
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_breakLength.default, null), /*#__PURE__*/_react.default.createElement(_sessionLength.default, null)), document.querySelector('#title'));
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_header.default, null)), document.querySelector('#title'));
+
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_breakLength.default, null), /*#__PURE__*/_react.default.createElement(_sessionLength.default, null)), document.querySelector('#app'));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/header":"components/header.js","./components/breakLength":"components/breakLength.js","./components/sessionLength":"components/sessionLength.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
