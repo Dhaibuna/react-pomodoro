@@ -29612,21 +29612,28 @@ function _iterableToArrayLimit(arr, i) { var _i = arr && (typeof Symbol !== "und
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var SetTimer = function SetTimer() {
+  // start configuration Break Time Length configuration
   var _useState = (0, _react.useState)(5),
       _useState2 = _slicedToArray(_useState, 2),
       count = _useState2[0],
-      setCount = _useState2[1];
+      setCount = _useState2[1]; //Increase button
+
+
+  var increaseCount = function increaseCount() {
+    setCount(count + 1);
+  }; //Decrease button
+
+
+  var decreaseCount = function decreaseCount() {
+    setCount(count - 1);
+  };
 
   return /*#__PURE__*/_react.default.createElement("div", {
     class: "timelength-container"
   }, /*#__PURE__*/_react.default.createElement("h2", null, " Break time length"), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
-    onCLick: function onCLick() {
-      return setCount(count - 1);
-    }
+    onClick: decreaseCount
   }, "-"), /*#__PURE__*/_react.default.createElement("span", null, count), /*#__PURE__*/_react.default.createElement("button", {
-    onCLick: function onCLick() {
-      return setCount(count + 1);
-    }
+    onClick: increaseCount
   }, "+")));
 };
 
