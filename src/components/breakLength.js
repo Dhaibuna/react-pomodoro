@@ -1,12 +1,12 @@
 import React from "react";
 
-const SetTimer = () => {
+const SetTimer = (props) => {
     return(
         <div class="timelength-container">
-            <h2>Break Time</h2>
+            <h2> Break time length</h2>
             <div>
                 <button>+</button>
-                <span></span>
+                <span>5</span>
                 <button>-</button>
             </div>
         </div>

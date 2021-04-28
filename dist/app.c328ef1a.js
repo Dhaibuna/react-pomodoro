@@ -29597,10 +29597,10 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var SetTimer = function SetTimer() {
+var SetTimer = function SetTimer(props) {
   return /*#__PURE__*/_react.default.createElement("div", {
     class: "timelength-container"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Break Time"), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", null, "+"), /*#__PURE__*/_react.default.createElement("span", null), /*#__PURE__*/_react.default.createElement("button", null, "-")));
+  }, /*#__PURE__*/_react.default.createElement("h2", null, " Break time length"), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", null, "+"), /*#__PURE__*/_react.default.createElement("span", null, "5"), /*#__PURE__*/_react.default.createElement("button", null, "-")));
 };
 
 var _default = SetTimer;
