@@ -29585,6 +29585,26 @@ var Header = function Header() {
 
 var _default = Header;
 exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"components/breakLength.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SetTimer = function SetTimer() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    class: "timelength-container"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Break Time"), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", null, "+"), /*#__PURE__*/_react.default.createElement("span", null), /*#__PURE__*/_react.default.createElement("button", null, "-")));
+};
+
+var _default = SetTimer;
+exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"app.js":[function(require,module,exports) {
 "use strict";
 
@@ -29594,10 +29614,12 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _header = _interopRequireDefault(require("./components/header"));
 
+var _breakLength = _interopRequireDefault(require("./components/breakLength"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_header.default, null), document.querySelector('#title'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/header":"components/header.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_breakLength.default, null)), document.querySelector('#title'));
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/header":"components/header.js","./components/breakLength":"components/breakLength.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
