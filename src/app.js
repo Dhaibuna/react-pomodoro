@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Header from "./components/header";
 import SetBreakLength from "./components/breakLength";
 import SetSessionLength from "./components/sessionLength";
-import SetTimer from "./components/timer";
+import SetTimerClock from "./components/timer";
 
 ReactDOM.render(
     <div>
@@ -16,7 +16,7 @@ ReactDOM.render(
     <div>
         <SetBreakLength />
         <SetSessionLength />
-        <SetTimer />
+        <SetTimerClock />
     </div>,
     document.querySelector("#app"),
 );

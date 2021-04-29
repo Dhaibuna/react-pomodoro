@@ -1,20 +1,24 @@
-import React, {useState} from "react";
+import React, {useRef, useEffect, useState} from "react";
 
-const SetTimer = () => {
 
-    const [timerMinutes, setTimerMinutes]= useState('00');
-    const[timerSeconds, setTimerSeconds]=useState('00');
+
+const SetTimerClock = () => {
+    
 
     return (
-        <div>
-            <div>
+        <section>
+            <div class="clock-container">
                 <h2>Session Time</h2>
                 <span>25</span>
                 <span>:</span>
                 <span>00</span>
+                <div>
+                    <button>GO/STOP</button>
+                    <button>RESET</button>
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 
-export default SetTimer;
+export default SetTimerClock;
