@@ -29702,6 +29702,26 @@ var SetSessionLength = function SetSessionLength() {
 
 var _default = SetSessionLength;
 exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"components/timer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+var SetTimer = function SetTimer() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Session Time"), /*#__PURE__*/_react.default.createElement("span", null, "25"), /*#__PURE__*/_react.default.createElement("span", null, ":"), /*#__PURE__*/_react.default.createElement("span", null, "00")));
+};
+
+var _default = SetTimer;
+exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"app.js":[function(require,module,exports) {
 "use strict";
 
@@ -29715,12 +29735,14 @@ var _breakLength = _interopRequireDefault(require("./components/breakLength"));
 
 var _sessionLength = _interopRequireDefault(require("./components/sessionLength"));
 
+var _timer = _interopRequireDefault(require("./components/timer"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_header.default, null)), document.querySelector('#title'));
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_header.default, null)), document.querySelector("#title"));
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_breakLength.default, null), /*#__PURE__*/_react.default.createElement(_sessionLength.default, null)), document.querySelector('#app'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/header":"components/header.js","./components/breakLength":"components/breakLength.js","./components/sessionLength":"components/sessionLength.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_breakLength.default, null), /*#__PURE__*/_react.default.createElement(_sessionLength.default, null), /*#__PURE__*/_react.default.createElement(_timer.default, null)), document.querySelector("#app"));
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/header":"components/header.js","./components/breakLength":"components/breakLength.js","./components/sessionLength":"components/sessionLength.js","./components/timer":"components/timer.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

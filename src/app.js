@@ -1,21 +1,24 @@
-import React from 'react'
-import ReactDOM from "react-dom"
+import React from "react";
+import ReactDOM from "react-dom";
 import Header from "./components/header";
 import SetBreakLength from "./components/breakLength";
 import SetSessionLength from "./components/sessionLength";
-
+import SetTimer from "./components/timer";
 
 ReactDOM.render(
     <div>
-    <Header />
+        <Header />
     </div>,
-    document.querySelector('#title')
-)
+    document.querySelector("#title"),
+);
 
 ReactDOM.render(
     <div>
         <SetBreakLength />
         <SetSessionLength />
+        <SetTimer />
     </div>,
-    document.querySelector('#app')
-)
+    document.querySelector("#app"),
+);
+
+
