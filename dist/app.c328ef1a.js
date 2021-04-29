@@ -29625,7 +29625,9 @@ var SetBreakLength = function SetBreakLength() {
 
 
   var decreaseCount = function decreaseCount() {
-    setCount(count - 1);
+    if (count > 0) {
+      setCount(count - 1);
+    } else setCount(0);
   };
 
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -29666,8 +29668,8 @@ function _iterableToArrayLimit(arr, i) { var _i = arr && (typeof Symbol !== "und
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var SetSessionLength = function SetSessionLength() {
-  // start configuration Break Time Length configuration
-  var _useState = (0, _react.useState)(5),
+  // start configuration Session Time Length configuration
+  var _useState = (0, _react.useState)(15),
       _useState2 = _slicedToArray(_useState, 2),
       count = _useState2[0],
       setCount = _useState2[1]; //Increase button
@@ -29679,7 +29681,11 @@ var SetSessionLength = function SetSessionLength() {
 
 
   var decreaseCount = function decreaseCount() {
-    setCount(count - 1);
+    if (count > 15) {
+      setCount(count - 1);
+    } else {
+      setCount(15);
+    }
   };
 
   return /*#__PURE__*/_react.default.createElement("div", {

@@ -10,7 +10,11 @@ const SetBreakLength = () => {
     }
     //Decrease button
     const decreaseCount =()=>{
-        setCount(count-1);
+
+        if (count > 0) {
+            setCount(count - 1);
+        }else
+            setCount(0);
     }
 
     return(

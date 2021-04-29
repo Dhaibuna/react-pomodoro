@@ -1,28 +1,32 @@
 import React, {useState} from "react";
 
 const SetSessionLength = () => {
-    // start configuration Break Time Length configuration
-    const [count, setCount] = useState(5);
+    // start configuration Session Time Length configuration
+    const [count, setCount] = useState(15);
 
     //Increase button
-    const increaseCount =() =>{
-        setCount(count+1);
-    }
+    const increaseCount = () => {
+        setCount(count + 1);
+    };
     //Decrease button
-    const decreaseCount =()=>{
-        setCount(count-1);
-    }
+    const decreaseCount = () => {
+        if (count > 15) {
+            setCount(count - 1);
+        }else{
+            setCount(15);
+        }
+    };
 
-    return(
+    return (
         <div class="timelength-container">
             <h2> Session time length</h2>
             <div>
-                <button onClick={decreaseCount} >-</button>
+                <button onClick={decreaseCount}>-</button>
                 <span>{count}</span>
                 <button onClick={increaseCount}>+</button>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default SetSessionLength
+export default SetSessionLength;
