@@ -13,6 +13,7 @@ const SetSessionLength = () => {
         if (count > 15) {
             setCount(count - 1);
         }else{
+            alert("15 minutes of focus is not so long, just try è_é !");
             setCount(15);
         }
     };

@@ -14,6 +14,7 @@ const SetBreakLength = () => {
         if (count > 0) {
             setCount(count - 1);
         }else
+            alert("Come on, take a break ;) !");
             setCount(0);
     }
 

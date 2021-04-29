@@ -29627,7 +29627,9 @@ var SetBreakLength = function SetBreakLength() {
   var decreaseCount = function decreaseCount() {
     if (count > 0) {
       setCount(count - 1);
-    } else setCount(0);
+    } else alert("Come on, take a break ;) !");
+
+    setCount(0);
   };
 
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -29684,6 +29686,7 @@ var SetSessionLength = function SetSessionLength() {
     if (count > 15) {
       setCount(count - 1);
     } else {
+      alert("15 minutes of focus is not so long, just try è_é !");
       setCount(15);
     }
   };
